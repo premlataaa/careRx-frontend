@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Login...</title>
+  </head>
+  <body>
+    <nav id="nav"></nav>
+
+      <div class="container">
+          <div class="form-container">
+              <h1>CareRx Login</h1>
+              <form id="loginForm">
+                  <div class="form-group">
+                      <label for="email">Email </label>
+                      <input type="email" id="email"  required>
+                  </div>
+                  <div class="form-group">
+                      <label for="password" >Password</label>
+                      <input type="password" id="password" required>
+                  </div>
+                  <button type="submit">Login</button>
+              </form>
+              <p class="switch-form">
+                  Don't have an account? <a href="signup.html">Sign Up</a>
+              </p>
+          </div>
+      </div>
+  
+      <div id="modal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="modal-message"></p>
+          </div>
+      </div>
+  </body>
+  <script src="./script/signup.js" type="module"> </script>
+  <script src="./script/navbar.js"></script>
+</html>

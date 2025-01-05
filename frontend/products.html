@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareRx - Products</title>
+    <link rel="stylesheet" href="./style/products.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1>CareRx</h1>
+            <a href="#" class="cart-icon">
+                🛒 <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="products-container">
+        <!-- Replace your current filter section in HTML with this -->
+        <aside class="filters">
+            <div class="filter-section">
+                <h3>Categories</h3>
+                <div id="categories-list" class="category-list">
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Price Range</h3>
+                <div class="price-range">
+                    <input type="range" id="price-range" min="0" max="1000" value="500">
+                    <div class="price-inputs">
+                        <input type="number" id="min-price" placeholder="Min" value="0">
+                        <input type="number" id="max-price" placeholder="Max" value="1000">
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Sort By</h3>
+                <select id="sort-select" class="sort-select">
+                    <option value="default">Recommended</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name</option>
+                </select>
+            </div>
+        </aside>
+
+        <section class="products-section">
+            <div class="search-container">
+                <input type="search" id="search-input" class="search-input" placeholder="Search products...">
+            </div>
+
+            <div class="products-grid">
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./script/utils.js"></script>
+    <script type="module" src="script/products.js"></script>
+</body>
+
+</html>

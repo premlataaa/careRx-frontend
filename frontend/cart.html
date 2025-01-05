@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        #nav{
+            justify-content: space-between;
+            width: 100%;
+        }
+        #logo {
+            margin-left: 20px;
+        }
+        #nav-links{
+            margin-right: 20px;
+        }
+        .empty-cart{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin:0 auto;
+            width: 500px;
+        }
+        .cart-msg{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            padding:0 20px 20px 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 200px;
+            height: 50px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: none;
+            cursor: pointer;
+            background-image: linear-gradient(180deg, rgba(52, 161, 250, 0.784), rgba(9, 47, 67, 0.689));
+            border-radius: 10px;
+      }
+        button:hover{
+            transform: scale(1.1);
+            transition: 2s smooth;
+        }
+    </style>
+
+</head>
+<body>
+    <nav id="nav">
+        <img id="logo" src="assets/Picsart_24-12-30_12-56-52-008.jpg" alt="logo">
+
+        <div id="nav-links">
+            <a href="login.html">Login</a>
+            <a href="signup.html">SignUp</a>
+            <a href="product.html">Products</a>
+            <a href="#"> need help?</a>
+        </div>
+    </nav>
+
+    
+    <img class="empty-cart" src="https://assets.1mg.com/pwa-app/production/dweb/2.0.1/static/images/illustrations/empty-cart.svg" alt="">
+    <div class="cart-msg">
+        <h3>Your cart is empty</h3>
+            <p>We have all the medicines and healthcare products that you need.</p>
+    </div>
+    <button> Add product</button>
+</div>
+</body>
+
+<script src="script/utils.js"></script>
+<script src="script/cart.js"></script>
+
+</html>
